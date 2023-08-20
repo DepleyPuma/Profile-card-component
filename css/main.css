@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  font-style: 18px;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.background {
+  z-index: -10;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.background .dot1 {
+  position: absolute;
+  top: -400px;
+  left: -400px;
+}
+.background .dot2 {
+  position: absolute;
+  bottom: -500px;
+  right: -300px;
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .container .card {
+  position: relative;
+  max-width: 350px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 25px;
+  overflow: hidden;
+}
+main .container .card__bg {
+  width: 100%;
+}
+main .container .card__img {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+main .container .card__info {
+  margin: 0 2em;
+  margin-top: 2em;
+  padding: 2em;
+  text-align: center;
+}
+main .container .card__info span {
+  font-size: 1.3rem;
+  color: hsl(227, 10%, 46%);
+}
+main .container .card__states {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+}
+main .container .card__states h3 {
+  color: hsl(229, 23%, 23%);
+}
+main .container .card__states p {
+  color: hsl(0, 0%, 59%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
